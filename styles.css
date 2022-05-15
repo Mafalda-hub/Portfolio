@@ -1,3 +1,170 @@
-h1 {
-  margin: 0 auto
+@font-face {
+  font-family: 'shadow-script';
+  src: url('./fonts/Shadow.ttf');
 }
+@font-face {
+  font-family: 'le-jour-script';
+  src: url('./fonts/le-jour-script.ttf');
+}
+
+.logo-text {
+  font-family: 'shadow-script';
+  font-size: 166px;
+  color: #464a4e;
+  margin: 0;
+  position: absolute;
+  top: -60px;
+  left: 31px;
+}
+
+.circle {
+  height: 150px;
+  width: 150px;
+  border: 8px solid #ddc6a4;
+  border-radius: 100px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+p {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+a {
+  color: #6e6e6e;
+}
+
+header {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  margin: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.hero-wrapper {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(244, 234, 233);
+  text-align: center;
+}
+
+.p-description, h4, li {
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.p-title {
+  font-family: 'le-jour-script';
+  color: rgb(203, 178, 142);
+}
+
+
+.hero-title {
+  margin: revert-layer;
+  font-size: 50px;
+  /* font-size: 14px; */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Features */
+
+.features-wrapper {
+  min-height: 450px;
+  display: flex; 
+  justify-content: space-around;
+  /* align-items: center; */
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-column {
+  padding: 10px 20px;
+  width: 250px;
+  text-align: center;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+/* Footer */
+
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+}
+
+/* MAKE IT RESPONSIVE */
+
+/* @media only screen and (max-width: 800px) {
+  nav ul {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .features-wrapper {
+    flex-direction: column;
+  }
+
+  body {
+    background-color: aquamarine;
+  }
+} */
+
+/* @media only screen and (max-width: 1200px) {
+  .burger-menu {
+    display: block;
+  }
+
+  .features-wrapper {
+    flex-direction: column;
+  }
+
+  body {
+    background-color: lime;
+  }
+} */
