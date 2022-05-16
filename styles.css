@@ -6,6 +6,44 @@
   font-family: 'le-jour-script';
   src: url('./fonts/le-jour-script.ttf');
 }
+@font-face {
+  font-family: 'hatton';
+  src: url('./fonts/hatton.otf');
+}
+@font-face {
+  font-family: 'raleway';
+  src: url('./fonts/raleway-extrabold.ttf');
+}
+@font-face {
+  font-family: 'lato';
+  src: url('./fonts/lato-thin.ttf');
+}
+
+.shadow-font{
+  font-family: 'shadow-script';
+}
+.lejour-font{
+  font-family: 'le-jour-script';
+  color: rgb(203, 178, 142);
+  font-size: 40px;
+}
+.h-font {
+  font-family: 'hatton';
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.raleway-font{
+  font-family: 'raleway';
+  font-weight: bold;
+}
+.lato-font{
+  font-family: 'lato';
+}
+
+.border {
+  border: 8px solid blue;
+  margin-top: 45px;
+}
 
 .logo-text {
   font-family: 'shadow-script';
@@ -14,7 +52,7 @@
   margin: 0;
   position: absolute;
   top: -60px;
-  left: 31px;
+  left: 30px;
 }
 
 .circle {
@@ -22,28 +60,37 @@
   width: 150px;
   border: 8px solid #ddc6a4;
   border-radius: 100px;
+  margin: 0 auto;
 }
 
 .wrapper {
   position: relative;
+  width: 150px;
+  margin: 0 auto;
 }
 
-* {
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* * {
   font-family: sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
-a,
+/* a,
 p {
   text-decoration: none;
   font-size: 18px;
-}
+} */
 
-a {
+/* a {
   color: #6e6e6e;
-}
+} */
 
 header {
   padding: 0 30px;
@@ -53,11 +100,11 @@ header {
   height: 100px;
 }
 
-nav ul {
+/* nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
-}
+} */
 
 nav li {
   display: inline-block;
@@ -72,6 +119,7 @@ nav a {
 
 .hero-wrapper {
   height: 400px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -80,49 +128,63 @@ nav a {
   text-align: center;
 }
 
-.p-description, h4, li {
-  margin-bottom: 20px;
-  font-family: 'Lato', sans-serif;
+.profile-text, .skill-text, .ed-text {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-
 
 .p-title {
-  font-family: 'le-jour-script';
-  color: rgb(203, 178, 142);
+  display: flex;
+  justify-content: center;
 }
+
+/* .p-description, h4, li {
+  margin-bottom: 20px;
+} */
 
 
 .hero-title {
   margin: revert-layer;
   font-size: 50px;
-  /* font-size: 14px; */
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
-/* Features */
 
 .features-wrapper {
   min-height: 450px;
   display: flex; 
   justify-content: space-around;
-  /* align-items: center; */
   max-width: 1100px;
   margin: 0 auto;
 }
 
 .feature-column {
-  padding: 10px 20px;
-  width: 250px;
+  /* padding: 10px 20px; */
+  width: 80%;
   text-align: center;
-  height: 300px;
+  /* height: 300px; */
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
+  justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
-/* Footer */
+a {
+  text-decoration: none;
+  font-family: 'lato';
+  color: #6e6e6e;
+}
+ul {
+  list-style: none;
+}
+
+.contacts-text {
+  width: 250px;
+}
+
 
 footer {
   height: 100px;
