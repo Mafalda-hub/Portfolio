@@ -19,6 +19,14 @@
   src: url('./fonts/lato-thin.ttf');
 }
 
+body {
+  margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .shadow-font{
   font-family: 'shadow-script';
 }
@@ -39,6 +47,28 @@
 .lato-font{
   font-family: 'lato';
   color: black;
+}
+
+.navbar{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.navbar a{
+  text-decoration: none;
+}
+
+.list{
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+#toggler, .navbar label {
+  display: none;
 }
 
 .border {
@@ -80,36 +110,11 @@ main {
   align-items: center;
 }
 
-/* * {
-  font-family: sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} */
-
-/* a,
-p {
-  text-decoration: none;
-  font-size: 18px;
-} */
-
-/* a {
-  color: #6e6e6e;
-} */
-
 header {
-  padding: 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
 }
-
-/* nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-} */
 
 nav li {
   display: inline-block;
@@ -124,7 +129,7 @@ nav a {
 
 .hero-wrapper {
   height: 400px;
-  width: 10000px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -133,8 +138,9 @@ nav a {
   text-align: center;
 }
 
-.profile-text, .skill-text, .ed-text {
-  width: 600px;
+.profile-text, .skill-text, .ed-text, .p-description {
+  width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -146,12 +152,6 @@ nav a {
   margin: 0px;
 }
 
-
-/* .p-description, h4, li {
-  margin-bottom: 20px;
-} */
-
-
 .hero-title {
   margin: revert-layer;
   font-size: 50px;
@@ -160,36 +160,9 @@ nav a {
 }
 
 .pro-title{
-  /* padding-top: 20px; */
   text-decoration: underline;
   color: black;
 }
-
-/* .grid-container {
-  display: grid;
-  grid-template-columns: 700px 700px;
-  grid-template-rows: 80px  80px;
-  column-gap: 10px;
-  row-gap: 15px;
-  grid-template-columns: repeat(2, 700px); 
-  justify-content: space-between;
-} */
-
-/* .box-1{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  min-height: 450px;
-  align-items: center;
-  justify-content: space-around;
-  max-width: 1500px;
-  margin: 0 auto;
-} */
-
-/* .box-2{
-  grid-column: 2;
-  grid-row: 2/4;
-  margin-top: 50px;
-} */
 
 .features-wrapper {
   min-height: 450px;
@@ -217,18 +190,23 @@ a {
   font-family: 'lato';
   color: black;
 }
+
 ul {
   list-style: none;
 }
 
 .contacts-text {
-  width: 250px;
   margin-bottom: 45px;
 }
 
 .contact-links {
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
+}
+
+.contact-links  a{
+  padding: 5px 30px;
 }
 
 footer {
@@ -242,42 +220,61 @@ footer {
   font-size: 12px;
 }
 
-svg {
-  height: 15px;
-  padding-left: 10px;
-  fill: #a8a6a6
+footer span {
+  color: white !important;
 }
 
 /* MAKE IT RESPONSIVE */
+@media only screen and (max-width: 600px) {
 
-/* @media only screen and (max-width: 800px) {
-  nav ul {
-    display: none;
+  .menu{
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
   }
 
-  .burger-menu {
-    display: block;
+  .list{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .navbar label{
+    display: inline-flex;
+    align-items: center;
+  }
+
+  #toggler:checked ~ .menu {
+    max-height: 100%;
+    position: relative;
+  }
+
+  .hero-wrapper {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(244, 234, 233);
+    text-align: center;
   }
 
   .features-wrapper {
     flex-direction: column;
   }
-
-  body {
-    background-color: aquamarine;
+.profile-text,
+.skill-text,
+.ed-text,
+.p-description{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
   }
-} */
 
-/* @media only screen and (max-width: 1200px) {
-  .burger-menu {
-    display: block;
-  }
-
-  .features-wrapper {
+  .contacts-text{
     flex-direction: column;
   }
 
-  body {
-    background-color: lime;
-  }
-} */
+}
