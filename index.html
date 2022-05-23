@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <link rel="stylesheet" href="styles.css" />
     <title>Ana Borges</title>
   </head>
@@ -28,6 +33,9 @@
           </li>
           <li>
             <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="#interests">Interests</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -64,14 +72,29 @@
       <div class="border">
         <p class="p-title h-font" id="projects">Projects</p>
         <div class="features-wrapper">
-          <div class="feature-column border">
+          <!-- <div class="grid-container"> -->
+          <div class="feature-column">
+            <!-- <div class="box-1"> -->
             <img
               src="./images/project-4.png"
               alt="Inked Homepage Screenshot"
               width="100"
             />
 
-            <a href="https://sticknpoke.netlify.app/">Inked</a>
+            <p class="pro-title lato-font">Inked</p>
+            <div>
+              <a href="https://sticknpoke.netlify.app/" target="_blank"
+                ><i class="fa fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/Mafalda-hub/project4-frontend"
+                target="_blank"
+                ><i class="fa fa-github-square"></i
+              ></a>
+            </div>
+            <!-- <a href="https://sticknpoke.netlify.app/" class="pro-title"
+              >Inked
+            </a> -->
             <p class="p-description lato-font">
               Full-stack application, created my backend and frontend fully from
               scratch. Used Django REST Framework from a Postgres database,
@@ -80,19 +103,32 @@
               adding your own tattoos only if you are registered/logged in.
             </p>
           </div>
-          <div class="feature-column border">
+          <div class="feature-column">
+            <!-- <div class="box-2"> -->
             <img
               src="./images/project-3.png"
               alt="Neighbour Needs Screenshot"
               width="100"
             />
-            <a href="https://neighbour-needs.netlify.app/">Neighbour Needs</a>
+            <p class="pro-title lato-font">Neighbour Needs</p>
+
+            <div>
+              <a href="https://neighbour-needs.netlify.app/" target="_blank"
+                ><i class="fa fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/Mafalda-hub/ga-project3-api"
+                target="_blank"
+                ><i class="fa fa-github-square"></i
+              ></a>
+            </div>
             <p class="p-description lato-font">
-              Full stack app using CRUD functionality, MongoDB, Express, React
-              and Node. This website consists of creating a platform that helps
-              you connect to your neighbourhood in order to require services
-              from them or help them doing whatever task they need help with
-              such as: babysitting and painting your walls.
+              Built a full-stack application by making my own backend and
+              frontend, use an express API to serve out data from a MongoDB,
+              consume our API with a separate frontend built with React, and use
+              CRUD functionality. I implemented the schemas, encrypted the
+              passwords, listed all API routes, responsive design and seeded all
+              data.
             </p>
           </div>
         </div>
@@ -103,10 +139,21 @@
               alt="Star Finder Homepage Screenshot"
               width="100"
             />
-            <a href="https://starsearch.netlify.app">Horoscope</a>
+            <p class="pro-title lato-font">Horoscope</p>
+            <div>
+              <a href="https://starsearch.netlify.app/" target="_blank"
+                ><i class="fa fa-link"></i
+              ></a>
+              <a href="https://github.com/Mafalda-hub/Horoscope" target="_blank"
+                ><i class="fa fa-github-square"></i
+              ></a>
+            </div>
+
             <p class="p-description lato-font">
-              Built a React application consuming a public API. Created several
-              components and a router. It was a three day project done in pairs.
+              Built a React application consuming a 3rd party public API of our
+              choice. I created several components and a router. Pair
+              programming in the project where I implemented most of the API
+              requests on the frontend.
             </p>
           </div>
           <div class="feature-column border">
@@ -115,9 +162,24 @@
               alt="Sudoku Screenshot"
               width="100"
             />
-            <a href="https://mafalda-hub.github.io/ga-project-1/">Sudoku</a>
+            <p class="pro-title lato-font">Sudoku</p>
+            <div>
+              <a
+                href="https://mafalda-hub.github.io/ga-project-1/"
+                target="_blank"
+                ><i class="fa fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/Mafalda-hub/ga-project-1"
+                target="_blank"
+                ><i class="fa fa-github-square"></i
+              ></a>
+            </div>
+
             <p class="p-description lato-font">
-              Sudoku game using HTML, CSS and JavaScript created by me.
+              We were given 8 days to create a game of our choice, solo. The
+              requirements were that we had to create separate HTML, CSS and
+              JavaScript files and use DOM manipulation.
             </p>
           </div>
         </div>
@@ -127,19 +189,23 @@
         <p class="p-title h-font" id="skills">Skills</p>
         <ul>
           <li class="lato-font">
-            HTML | CSS | JavaScript | SASS | React | Bulma
+            <strong>Frontend:</strong> HTML | CSS | JavaScript | SASS | React |
+            Bulma
           </li>
           <li class="lato-font">
-            Node.js | MongoDB | Express | Python | Django | PostgreSQL |
-            TablePlus | Postman
-          </li>
-          <li class="lato-font">Heroku | Netlify</li>
-          <li class="lato-font">
-            Portuguese (native) | English (fluent) | Spanish (conversational)
+            <strong>Backend:</strong> Node.js | MongoDB | Express | Python |
+            Django | PostgreSQL | TablePlus
           </li>
           <li class="lato-font">
-            Organisation | Planning | Problem solving | Flexibility | Empathy |
-            Team-work | Creativity
+            <strong>DevOps:</strong> Git | GitHub | Heroku | Netlify | Postman
+          </li>
+          <li class="lato-font">
+            <strong>Languages spoken:</strong> Portuguese (native) | English
+            (fluent) | Spanish (conversational)
+          </li>
+          <li class="lato-font">
+            <strong>Soft skills:</strong> Organisation | Planning | Problem
+            solving | Flexibility | Empathy | Team-work | Creativity
           </li>
         </ul>
       </div>
@@ -161,12 +227,24 @@
           Nursing
         </p>
       </div>
+      <div class="border ed-text">
+        <p class="p-title h-font" id="interests">Interests</p>
+        <p class="p-description lato-font">
+          During my free time I enjoy reading self help books, meditating and
+          travelling. Whenever I’m feeling stressed I go for walks since it
+          helps to clear my mind. I love crocheting, I spent a lot of time
+          practising during the pandemic and it really helps me relax.
+        </p>
+      </div>
+
       <div class="border contacts-text">
         <p class="p-title h-font" id="contact">Contact</p>
         <p class="p-description lato-font contact-links">
-          <a href="https://github.com/Mafalda-hub">GitHub</a>
-          <a href="https://www.linkedin.com/in/ana-m-borges/">Linkedin</a>
-          <a href="mailto: ana.montborges@gmail.com">Email</a>
+          <a href="https://github.com/Mafalda-hub" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/ana-m-borges/" target="_blank"
+            >Linkedin</a
+          >
+          <a href="mailto: ana.montborges@gmail.com" target="_blank">Email</a>
         </p>
       </div>
     </main>
